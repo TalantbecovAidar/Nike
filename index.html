@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Project</title>
+  </head>
+  <body>
+    <!--? navbar start  -->
+    <div class="container1">
+      <div class="block1">
+        <div class="header1">
+          <div class="header_logo1">
+            <img src="./images/swoosh-logo-black.jfif" alt="logo" />
+            <h2>Nike Store</h2>
+          </div>
+          <div class="header_center1">
+            <ul>
+              <a href="./index1.html">
+                <li>Главная</li>
+              </a>
+              <a href="./index4.html">
+                <li>Продукты</li>
+              </a>
+              <a href="./index3.html">
+                <li>Партнеры</li>
+              </a>
+              <a href="./index2.html">
+                <li>О нас</li>
+              </a>
+            </ul>
+          </div>
+          <div class="search-box1">
+            <input type="text" class="search-txt" />
+            <a href="" class="search-btn">
+              <img
+                src="https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon.png"
+                alt=""
+                width="20px"
+              />
+            </a>
+          </div>
+          <div id="open-admin"></div>
+        </div>
+      </div>
+    </div>
+    <!--? navbar end -->
+
+    <!-- ! create start -->
+    <div class="section__add">
+      <div id="accordion__header" class="active">Добавить товар</div>
+      <div id="accordion__body">
+        <input
+          type="text"
+          class="section__add_details"
+          placeholder="Описание"
+        />
+        <input type="number" class="section__add_price" placeholder="Цена" />
+        <input
+          type="text"
+          class="section__add_quantity"
+          placeholder="Наименование"
+        />
+        <input
+          type="text"
+          class="section__add_category"
+          placeholder="Категория"
+        />
+        <input type="number" class="section__add_sales" placeholder="Скидки" />
+        <input
+          type="url"
+          class="section__add_url"
+          placeholder="URL изображение"
+        />
+        <button class="section__add_btn-add">Add</button>
+      </div>
+    </div>
+    <!-- ? create end -->
+    <!-- navbar start
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Навбар</a>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Поиск"
+            aria-label="Поиск"
+          />
+          <button class="btn btn-outline-success" type="submit">Поиск</button>
+        </form>
+      </div>
+    </nav> -->
+    <!-- navbar end -->
+    <!-- admin panel start -->
+    <!-- <div class="d-flex flex-column w-100 align-items-center admin">
+      <h2>Admin panel</h2>
+      <input
+        id="title"
+        placeholder="Title"
+        type="text"
+        class="form-control inp w-50 mb-2"
+      />
+      <input
+        id="price"
+        placeholder="Price"
+        type="text"
+        class="form-control inp w-50 mb-2"
+      />
+      <input
+        id="description"
+        placeholder="Description"
+        type="text"
+        class="form-control inp w-50 mb-2"
+      />
+      <input
+        id="image"
+        placeholder="Image"
+        type="text"
+        class="form-control inp w-50 mb-2"
+      />
+      <button id="btn-add" class="btn btn-dark">Add Product</button>
+    </div> -->
+    <!-- admin panel end -->
+    <!-- content start -->
+    <div
+      id="product-list"
+      class="d-flex flex-wrap justify-content-center"
+    ></div>
+    <!-- content end -->
+    <!-- ! READ START -->
+    <section id="section__read"></section>
+    <!-- ? READ END -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
